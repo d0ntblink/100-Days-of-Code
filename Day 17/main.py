@@ -9,5 +9,6 @@ for enteries in question_data:
 
 quiz = QuizBrain(list=question_bank)
 
-while True:
+while quiz.check_for_question():
     quiz.ask_qestion()
+print("you have finished my quiz")
